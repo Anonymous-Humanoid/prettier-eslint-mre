@@ -1,14 +1,12 @@
 import js from '@eslint/js';
-import stylistic from '@stylistic/eslint-plugin';
-import { defineConfig } from 'eslint/config';
+import tseslint from 'typescript-eslint';
 
 /**
  * @link https://typescript-eslint.io/users/configs/
  * @see https://typescript-eslint.io/packages/typescript-eslint#config tseslint.config
  */
-const config = defineConfig([
-    js.configs.recommended,
-    stylistic.configs.recommended
+const config = tseslint.config([
+    js.configs.recommended
 ]);
 
 export default config;
