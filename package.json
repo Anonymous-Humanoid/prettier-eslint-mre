@@ -1,0 +1,19 @@
+{
+    "name": "prettier-eslint-mre",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prettier": "prettier --config ./prettier.config.mjs --ignore-path ./prettierignore -u **/* --write",
+        "eslint": "eslint -c ./eslint.config.mjs . --fix",
+        "prettify": "prettier-eslint --config ./prettier.config.mjs --eslint-config-path ./eslint.config.mjs **/*"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.38.0",
+        "@stylistic/eslint-plugin": "^5.5.0",
+        "prettier": "^3.6.2",
+        "prettier-eslint-cli": "^8.0.1"
+    }
+}
