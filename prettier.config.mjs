@@ -17,4 +17,4 @@ const CONFIG = {
     singleAttributePerLine: false
 };
 
-module.exports = CONFIG;
+export default CONFIG;

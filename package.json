@@ -3,12 +3,11 @@
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
-    "type": "commonjs",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "prettier": "prettier --config ./prettier.config.cjs --ignore-path ./prettierignore -u **/* --write",
-        "eslint": "eslint -c ./.eslintrc.cjs . --fix",
-        "prettify": "prettier-eslint --config ./prettier.config.cjs --eslint-config-path ./.eslintrc.cjs --write **/*"
+        "prettier": "prettier --config ./prettier.config.mjs -u **/* --write",
+        "eslint": "eslint -c ./eslint.config.mjs . --fix",
+        "prettify": "prettier-eslint --config ./prettier.config.mjs --eslint-config-path ./eslint.config.mjs --write **/*"
     },
     "devDependencies": {
         "@eslint/js": "^9.38.0",
